@@ -15,7 +15,7 @@ hr{display:block;height:1px;border:0;border-top:1px solid #ccc;margin:1em 0;padd
 input,select{vertical-align:middle}
 li{list-style:none}
 
-
+/* MAIN STYLING*/
 
 html,body{ 
 	width:100%;
@@ -29,51 +29,125 @@ html{
 
 body{
   font:normal 75% Arial, Helvetica, sans-serif;
+  overflow-x: hidden;
+}
+
+
+/*HOME PAGE*/
+
+.bghome {
+  position: absolute;
+  top: 0;
+  width: 100vw;
+  height: 80vh;
+  background-color: rgb(54, 54, 54);
+}
+
+.leftnav {
+  position: fixed;
+  top: 3.5%;
+  left: 5%;
+  display: flex;
+  flex-direction: row;
+}
+
+.leftnav p {
+  padding-top: 1.1%;
+  font-size: 2vh;
+  font-weight: 700;
+  color: #A0D4F1;
+}
+
+
+.leftnav img {
+  width: 3%;
+  padding-right: 1%;
 }
 
 .navbar {
-  position: absolute;
+  position: fixed;
   top: 5%;
-  width: 70%;
-  background-color: #555;
+  width: 60%;
   overflow: auto;
-  margin-left: 15%;
+  margin-left: 20%;
 }
 
 .navbar a {
   float: left;
   padding: 1%;
-  color: white;
+  color: rgba(255, 255, 255, 0.60);
   text-decoration: none;
   font-size: 1.7vh;
-  width: 12.285%;
+  width: 14.66%;
   text-align: center;
 }
 
 .navbar a:hover {
-  background-color: #1b1b1b;
+  color: white;
+  font-weight: bold;
 }
 
 .navbar a.active {
-  background-color: #0c4164;
+  color: white;
+  font-weight: bold;
+}
+
+.cornercont {
+  position: fixed;
+  top: 4.8%;
+  right: 5.9%;
+  width: 8%;
+  height: 4.5%;
+  border: white;
+  border-width: 0.25vh;
+  border-style: solid;
+  border-radius: 12px 12px 12px 12px;
+}
+
+.cont {
+  border-width: 100%;
+  position: fixed;
+  top: 6.5%;
+  right: 7.5%;
+  font-size: 1.7vh;
+  font-weight: 700;
+  display: flex;
+  align-self: center;
+}
+
+.cont p {
+  padding-left: 1vw;
+}
+
+.cont img {
+  width: 1vw;
 }
 
 canvas{
   display:block;
-  
+}
+
+.headtit {
+  position: absolute;
+  top: 90%;
+  width: 100%;
+  font-size: 3.5vh;
+  display: flex;
+  justify-content: center;
 }
 
 .intro{
   position: absolute;
-  top: 25%;
+  top: 105%;
   width: 50%;
   margin-left: 25%;
   font-size: 2vh;
+  color: rgba(255, 255, 255, 0.8);
 }
 
 .maintit {
   position: absolute;
-  top: 50%;
+  top: 150%;
   width: 50%;
   left: 25%;
   font-size: 2.5vh;
@@ -83,60 +157,70 @@ canvas{
 .slamimg {
   position: absolute;
   width: 20%;
-  top: 73%;
+  top: 173%;
   left: 25%;
-  border-radius: 10%;
+  border-radius: 10px 10px 10px 10px;
   
 }
 
 .slam {
   position: absolute;
-  top: 55%;
+  top: 155%;
  left: 25%;
   font-size: 2vh;
+  color: rgba(255, 255, 255, 0.9);
 }
 
 .slamtxt {
   position: absolute;
-  top: 58%;
+  top: 158%;
   left: 25%;
   font-size: 1.5vh;
   width: 20%;
+  color: rgba(255, 255, 255, 0.7);
 }
 
 .sisrimg {
   position: absolute;
   width: 20%;
-  top: 73%;
+  top: 173%;
   left: 55%;
-  border-radius: 10%;
+  border-radius: 10px 10px 10px 10px;
   
 }
 
 .sisr {
   position: absolute;
-  top: 55%;
+  top: 155%;
   left: 55%;
   font-size: 2vh;
+  color: rgba(255, 255, 255, 0.9);
 }
 
 .sisrtxt {
   position: absolute;
-  top: 58%;
+  top: 158%;
   left: 55%;
   font-size: 1.5vh;
   width: 20%;
-
+  color: rgba(255, 255, 255, 0.7);
 }
+
 
 
 
 
 /* ---- particles.js container ---- */
 
+.part {
+  margin-top: 80vh;
+  overflow-y: hidden;
+ }
+
 #particles-js{
+  overflow-y: hidden;
   width: 100%;
-  height: 100%;
+  height: 120%;
   background-color: #1b1b1b;
   background-image: url('');
   background-size: cover;
