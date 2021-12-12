@@ -38,9 +38,18 @@ body{
 .bghome {
   position: absolute;
   top: 0;
-  width: 100vw;
+  width: 50vw;
   height: 80vh;
   background-color: rgb(54, 54, 54);
+}
+
+.bghometwo {
+  position: absolute;
+  left: 50vw;
+  top: 0;
+  width: 50vw;
+  height: 80vh;
+  background-color: #1758A0;
 }
 
 .leftnav {
@@ -135,25 +144,98 @@ canvas{
   display: flex;
   justify-content: center;
 }
-.presentation{
+
+.presentation {
   position: absolute;
-  top: 15%;
-  width: 50%;
-  left: 25%;
-  font-size: 2.5vh;
+  top: 40%;
+  width: 100%;
+  text-align: center;
+  font-size: 4.5vh;
 }
+
+.presentationinfo {
+  position: absolute;
+  top: 50%;
+  font-size: 2.2vh;
+  width: 70%;
+  left: 15%;
+  text-align: center;
+}
+
+.engagez {
+  background-color: #1758A0;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 65%;
+  font-size: 1.75vh;
+  font-weight: 600;
+  border-radius: 5% 5% 5% 5%;
+  width: 20%;
+  height: 5%;
+  left: 40%;
+  animation: float 6s ease-in-out infinite;
+}
+
+.logobts {
+  position: absolute;
+  top: 85%;
+  width: 70%;
+  left: 15%;
+  text-align: center;
+}
+
+.logobts img {
+  width: 20%;
+  opacity: 75%;
+}
+
+
+.logobts img:hover {
+  transform: scale(120%);
+  opacity: 100%;
+}
+
+
+.pp{
+  height: 70vh;
+  margin: 10vh 0 0 25vw;
+}
+
 .apropos{
     position: absolute;
     top: 20%;
     width: 50%;
-    left: 25%;
+    left: 50%;
     font-size: 2.5vh;
+}
+
+.courses {
+  position: absolute;
+  width: 50%;
+  left: 25%;
+  top: 125%;
+  height: 20%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.courses > div > img {
+  height: 50%;
+}
+
+.courses > div > p {
+  text-align: center;
+  margin-top: 2vh;
+  font-size: 2vh;
+  font-weight: 500;
 }
 .intro{
   position: absolute;
-  top: 105%;
+  top: 100%;
+  left: 25%;
   width: 50%;
-  margin-left: 25%;
   font-size: 2vh;
   color: rgba(255, 255, 255, 0.8);
 }
@@ -239,4 +321,55 @@ canvas{
   background-size: cover;
   background-position: 50% 50%;
   background-repeat: no-repeat;
+}
+ /*Other animations*/
+
+@keyframes float {
+	0% {
+		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+		transform: translatey(0px);
+	}
+	50% {
+		box-shadow: 0 25px 15px 0px rgba(0,0,0,0.2);
+		transform: translatey(-20px);
+	}
+	100% {
+		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+		transform: translatey(0px);
+	}
+}
+
+
+.patterns {
+  position: absolute;
+  top: 40%;
+  left: 5%;
+
+}
+
+
+svg text {
+  letter-spacing: 10px;
+  stroke: #A0D4F1;
+  font-size: 6vh;
+  font-weight: 700;
+  stroke-width: 2;
+  animation: textAnimate 5s infinite alternate;
+  
+}
+
+@keyframes textAnimate {
+  0% {
+    stroke-dasharray: 0 50%;
+    stroke-dashoffset:  20%;
+    fill:rgb(44,150,210)
+
+  }
+  
+  100% {
+    stroke-dasharray: 50% 0;
+    stroke-dashoffstet: -20%;
+    fill: hsla(189, 68%, 75%,0%)
+  }
+  
 }
