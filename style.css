@@ -135,7 +135,20 @@ canvas{
   display: flex;
   justify-content: center;
 }
-
+.presentation{
+  position: absolute;
+  top: 15%;
+  width: 50%;
+  left: 25%;
+  font-size: 2.5vh;
+}
+.apropos{
+    position: absolute;
+    top: 20%;
+    width: 50%;
+    left: 25%;
+    font-size: 2.5vh;
+}
 .intro{
   position: absolute;
   top: 105%;
